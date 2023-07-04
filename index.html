@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>To do List</title>
+</head>
+
+<body>
+    <h1 class="animated-text">TaskPlanner: Plan, Execute, Succeed</h1>
+    <form action="index.php" method="$_POST">
+        <div class="form-group">
+            <input type="input" class="form-control" id="task" placeholder="Enter Task">
+            <input type="number" class="form-control" id="priority" min="0" max="3" placeholder="Enter The priority">
+        </div>
+        <button type="button" class="btn btn-outline-info" action="on click" id="add">Add</button>
+    </form>
+    <div class="content">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>High Priority</h2>
+                <ul id="listhigh">
+
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h2>Medium Priority</h2>
+                <ul id="listmed">
+
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h2>Low Priority</h2>
+                <ul id="listlow">
+
+                </ul>
+            </div>
+        </div>
+    </div>      
+</div>
+    <h2 id="prog">Progress</h2>
+    <div class="progress">
+
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="progress"></div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
